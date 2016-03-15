@@ -1,0 +1,7 @@
+﻿namespace libNetaccess
+{
+    class NetAccess
+    {
+
+    }
+}
