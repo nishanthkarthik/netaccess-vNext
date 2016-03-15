@@ -1,4 +1,5 @@
-﻿using libNetaccess;
+﻿using System;
+using libNetaccess;
 
 namespace csharp_auth
 {
@@ -6,6 +7,11 @@ namespace csharp_auth
     {
         static void Main(string[] args)
         {
+            string roll = Console.ReadLine();
+            string passwd = Console.ReadLine();
+            var net = new NetAccess(roll, passwd);
+            Console.WriteLine(net.KeepaliveUrl);
+            Console.WriteLine("> logged out : " + net.LogOut());
         }
     }
 }
