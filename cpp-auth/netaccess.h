@@ -19,12 +19,15 @@ using namespace std;
 class netaccess
 {
 	bool _LoggedIn;
+	int errorcheck(CURLcode);
+	string params_string(UrlParams const &params);
+
 public:
 	string Magic;
 	string InitUri;
 	string KeepaliveUrl;
 	string LogoutUrl;
-	netaccess(string username, string password);
+	netaccess(string, string);
 	~netaccess();
 	bool LogOut();
 };
