@@ -111,7 +111,7 @@ def main():
         atexit.register(clean_exit, netaccess)
         while True:
             periodic_refresh(netaccess)
-            time.sleep(5)
+            time.sleep(60)
     return
 
 if __name__ == '__main__':

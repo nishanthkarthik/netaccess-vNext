@@ -58,7 +58,7 @@ netaccess::netaccess(string username, string password)
 		if (!string(redirecturl).find("fgtauth"))
 			return;
 		InitUri = string(redirecturl);
-		
+		cout<<InitUri;
 
 	}	
 
